@@ -49,7 +49,7 @@ export default class Header extends Component {
           <Link to='/'>
             <FontAwesomeIcon className='green' icon='frog' />
             {' '}
-            Blogful Client
+            Memoir Client
           </Link>
         </h1>
         {TokenService.hasAuthToken()
