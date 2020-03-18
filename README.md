@@ -1,4 +1,4 @@
-# Blogful client
+# My Marvelous Memoir by Rupali Rajput
 
 ## Scripts
 
