@@ -3,6 +3,7 @@ import PostListContext from "../../contexts/PostListContext";
 import PostApiService from "../../services/post-api-service";
 import { Section } from "../../components/Utils/Utils";
 import PostListItem from "../../components/PostListItem/PostListItem";
+import { Link } from "react-router-dom";
 
 export default class PostListPage extends Component {
   static contextType = PostListContext;
@@ -23,11 +24,12 @@ export default class PostListPage extends Component {
     const { error } = this.context;
     return (
       <Section list className="PostListPage">
+        <Link to="/addpost">Add New Post</Link>
         {error ? (
           <p className="red">There was an error, try again</p>
         ) : (
-          this.renderPosts()
-        )}
+            this.renderPosts()
+          )}
       </Section>
     );
   }

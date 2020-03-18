@@ -4,25 +4,25 @@ import AuthApiService from '../../services/auth-api-service'
 
 export default class RegistrationForm extends Component {
   static defaultProps = {
-    onRegistrationSuccess: () => {}
+    onRegistrationSuccess: () => { }
   }
 
   state = { error: null }
 
   handleSubmit = ev => {
     ev.preventDefault()
-    const { full_name, nick_name, user_name, password } = ev.target
+    const { full_name, email, user_name, password } = ev.target
 
     this.setState({ error: null })
     AuthApiService.postUser({
       user_name: user_name.value,
       password: password.value,
       full_name: full_name.value,
-      nickname: nick_name.value,
+      email: email.value,
     })
       .then(user => {
         full_name.value = ''
-        nick_name.value = ''
+        email.value = ''
         user_name.value = ''
         password.value = ''
         this.props.onRegistrationSuccess()
@@ -75,15 +75,15 @@ export default class RegistrationForm extends Component {
             id='RegistrationForm__password'>
           </Input>
         </div>
-        <div className='nick_name'>
-          <label htmlFor='RegistrationForm__nick_name'>
-            Nickname
+        <div className='email'>
+          <label htmlFor='RegistrationForm__email'>
+            Email <Required />
           </label>
           <Input
-            name='nick_name'
+            name='email'
             type='text'
             required
-            id='RegistrationForm__nick_name'>
+            id='RegistrationForm__email'>
           </Input>
         </div>
         <Button type='submit'>

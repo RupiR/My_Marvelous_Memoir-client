@@ -12,6 +12,8 @@ import TokenService from "../../services/token-service";
 import AuthApiService from "../../services/auth-api-service";
 import IdleService from "../../services/idle-service";
 import "./App.css";
+import LandingPage from "../../routes/LandingPage/LandingPage";
+import NewPostPage from "../../routes/NewPostPage/NewPostPage";
 
 class App extends Component {
   state = { hasError: false };
@@ -86,10 +88,12 @@ class App extends Component {
             <p className="red">There was an error! Oh no!</p>
           )}
           <Switch>
-            <Route exact path={"/"} component={PostListPage} />
+            <Route exact path={"/"} component={LandingPage} />
+            <PrivateRoute exact path={"/userpage"} component={PostListPage} />
             <PublicOnlyRoute path={"/login"} component={LoginPage} />
             <PublicOnlyRoute path={"/register"} component={RegistrationPage} />
             <PrivateRoute path={"/post/:postId"} component={PostPage} />
+            <PrivateRoute path={"/addpost"} component={NewPostPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </main>
