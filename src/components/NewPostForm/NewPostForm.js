@@ -32,6 +32,17 @@ export default class NewPostForm extends Component {
                     <textarea name="entry-summary" rows="15" required></textarea>
                 </div>
 
+                <div className='currentmood'>
+                    <label htmlFor='NewPostForm__currentmood'>
+                        Current Mood
+          </label>
+                    <Input
+                        name='Current Mood'
+                        type='text'
+                        required
+                        id='NewPostForm__currentmood'>
+                    </Input>
+                </div>
 
                 <p>Select private or public</p>
 
