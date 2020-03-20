@@ -4,7 +4,7 @@ import { Button, Input } from '../Utils/Utils'
 
 export default class LoginForm extends Component {
   static defaultProps = {
-    onLoginSuccess: () => {}
+    onLoginSuccess: () => { }
   }
 
   state = { error: null }
@@ -12,14 +12,14 @@ export default class LoginForm extends Component {
   handleSubmitJwtAuth = ev => {
     ev.preventDefault()
     this.setState({ error: null })
-    const { user_name, password } = ev.target
+    const { username, password } = ev.target
 
     AuthApiService.postLogin({
-      user_name: user_name.value,
+      username: username.value,
       password: password.value,
     })
       .then(res => {
-        user_name.value = ''
+        username.value = ''
         password.value = ''
         this.props.onLoginSuccess()
       })
@@ -38,14 +38,14 @@ export default class LoginForm extends Component {
         <div role='alert'>
           {error && <p className='red'>{error}</p>}
         </div>
-        <div className='user_name'>
-          <label htmlFor='LoginForm__user_name'>
-            User name
+        <div className='username'>
+          <label htmlFor='LoginForm__username'>
+            Username
           </label>
           <Input
             required
-            name='user_name'
-            id='LoginForm__user_name'>
+            name='username'
+            id='LoginForm__username'>
           </Input>
         </div>
         <div className='password'>

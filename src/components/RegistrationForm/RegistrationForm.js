@@ -11,11 +11,11 @@ export default class RegistrationForm extends Component {
 
   handleSubmit = ev => {
     ev.preventDefault()
-    const { full_name, email, user_name, password } = ev.target
+    const { full_name, email, username, password } = ev.target
 
     this.setState({ error: null })
     AuthApiService.postUser({
-      user_name: user_name.value,
+      username: username.value,
       password: password.value,
       full_name: full_name.value,
       email: email.value,
@@ -23,7 +23,7 @@ export default class RegistrationForm extends Component {
       .then(user => {
         full_name.value = ''
         email.value = ''
-        user_name.value = ''
+        username.value = ''
         password.value = ''
         this.props.onRegistrationSuccess()
       })
@@ -53,15 +53,15 @@ export default class RegistrationForm extends Component {
             id='RegistrationForm__full_name'>
           </Input>
         </div>
-        <div className='user_name'>
-          <label htmlFor='RegistrationForm__user_name'>
+        <div className='username'>
+          <label htmlFor='RegistrationForm__username'>
             User name <Required />
           </label>
           <Input
-            name='user_name'
+            name='username'
             type='text'
             required
-            id='RegistrationForm__user_name'>
+            id='RegistrationForm__username'>
           </Input>
         </div>
         <div className='password'>
