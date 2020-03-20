@@ -35,7 +35,7 @@ export default class NewPostForm extends Component {
                 <div className='currentmood'>
                     <label htmlFor='NewPostForm__currentmood'>
                         Current Mood
-          </label>
+                    </label>
                     <Input
                         name='Current Mood'
                         type='text'

@@ -38,6 +38,16 @@ export default class LoginForm extends Component {
         <div role='alert'>
           {error && <p className='red'>{error}</p>}
         </div>
+        <div className='username'>
+          <label htmlFor='LoginForm__username'>
+            Username
+          </label>
+          <Input
+            required
+            name='username'
+            id='LoginForm__username'>
+          </Input>
+        </div>
 
         <div className='password'>
           <label htmlFor='LoginForm__password'>
