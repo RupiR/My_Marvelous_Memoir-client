@@ -5,6 +5,7 @@ import { Hyph } from '../Utils/Utils'
 import TokenService from '../../services/token-service'
 import IdleService from '../../services/idle-service'
 import './Header.css'
+import Logo from './logo.png';
 
 export default class Header extends Component {
   handleLogoutClick = () => {
@@ -47,8 +48,9 @@ export default class Header extends Component {
       <nav className='Header'>
         <h1>
           <Link to='/'>
+            {/* <img className='logophoto' src={Logo} alt='logo' /> */}
             {' '}
-            Memoir Client
+            My Marvelous Memoir
           </Link>
         </h1>
         {TokenService.hasAuthToken()
