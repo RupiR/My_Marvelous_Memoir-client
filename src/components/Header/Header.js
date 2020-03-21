@@ -47,7 +47,7 @@ export default class Header extends Component {
       <nav className='Header'>
         <h1>
           <Link to='/'>
-            <FontAwesomeIcon className='green' icon='frog' />
+            {/* <FontAwesomeIcon className='green' icon='frog' /> */}
             {' '}
             Memoir Client
           </Link>
