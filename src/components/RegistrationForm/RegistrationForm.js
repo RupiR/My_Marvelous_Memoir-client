@@ -55,7 +55,7 @@ export default class RegistrationForm extends Component {
         </div>
         <div className='username'>
           <label htmlFor='RegistrationForm__username'>
-            User name <Required />
+            Username <Required />
           </label>
           <Input
             name='username'
