@@ -30,7 +30,7 @@ export default class Header extends Component {
       <div className='Header__not-logged-in'>
         <Link
           to='/register'>
-          Register
+          Create Account
         </Link>
         <Hyph />
         <Link
