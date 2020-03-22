@@ -2,7 +2,7 @@
   height: 40px;
   display: flex;
   align-items: normal;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .Header h1 {
@@ -11,6 +11,13 @@
 
 .Header h1 a {
   text-decoration: none;
+  height: 100px;
+  width: 600px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .Header a {
@@ -24,6 +31,11 @@
 
 .Header__not-logged-in .Hyph {
   display: none;
+}
+
+.logophoto {
+  height: 100px;
+  width: 100px;
 }
 
 @media screen and (min-width: 450px) {
@@ -42,4 +54,3 @@
     display: initial;
   }
 }
-

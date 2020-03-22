@@ -4,8 +4,6 @@ import { Hyph } from '../Utils/Utils'
 import TokenService from '../../services/token-service'
 import IdleService from '../../services/idle-service'
 import './Header.css'
-// import Mylogo from '../Logo'
-// import Logo from '../Logo/Logo'
 
 export default class Header extends Component {
   handleLogoutClick = () => {
@@ -49,8 +47,7 @@ export default class Header extends Component {
         {/* <Logo /> */}
         <h1>
           <Link to='/'>
-            {/* <img className='logophoto' src={Logo} alt='logo' /> */}
-            {' '}
+            <img className='logophoto' src='/assets/mylogo.png' />
             My Marvelous Memoir
           </Link>
         </h1>

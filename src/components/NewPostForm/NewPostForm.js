@@ -10,11 +10,11 @@ export default class NewPostForm extends Component {
     handleSubmit = ev => {
         ev.preventDefault();
         const { post } = this.context;
-        const { text } = ev.target;
-        PostApiService.postPost(post.id, text.value)
+        const { entrytitle, entrysummary, entrytype } = ev.target;
+        PostApiService.createPost(entrytitle.value, entrysummary.value, entrytype.value)
             .then(this.context.addPost)
             .then(() => {
-                text.value = "";
+                // ev.target.reset;
             })
             .catch(this.context.setError);
     };
@@ -23,40 +23,28 @@ export default class NewPostForm extends Component {
         return (
             <form className="NewPostForm" onSubmit={this.handleSubmit}>
                 <div class="form-section">
-                    <label for="entry-title">Entry title</label>
-                    <input type="text" name="entry-title" placeholder="Feeling happy" required />
+                    <label for="entrytitle">Entry title</label>
+                    <input type="text" name="entrytitle" placeholder="Feeling happy" required />
                 </div>
 
                 <div class="form-section">
-                    <label for="entry-summary">Entry</label>
-                    <textarea name="entry-summary" rows="15" required></textarea>
+                    <label for="entrysummary">Entry</label>
+                    <textarea name="entrysummary" rows="15" required></textarea>
                 </div>
 
                 <p>Select private or public</p>
 
-                <input type="radio" name="entry-type" value="0" class="entry-type-radio" checked />
-                <label for="entry-type">
+                <input type="radio" name="entrytype" value="0" class="entry-type-radio" checked />
+                <label for="entrytype">
                     <span>Private</span>
-                    <div class="entry-type-explanation">I would like this post to be private</div>
+                    <div class="entrytypeexplanation">I would like this post to be private</div>
                 </label>
 
-                <input type="radio" name="entry-type" value="1" class="entry-type-radio" />
-                <label for="entry-type">
+                <input type="radio" name="entrytype" value="1" class="entry-type-radio" />
+                <label for="entrytype">
                     <span>Public</span>
-                    <div class="entry-type-explanation">I would like this post to be public</div>
+                    <div class="entrytypeexplanation">I would like this post to be public</div>
                 </label>
-
-                <div className="text">
-                    <Textarea
-                        required
-                        aria-label="Type a Post..."
-                        name="text"
-                        id="text"
-                        cols="30"
-                        rows="3"
-                        placeholder="Type a Post.."
-                    ></Textarea>
-                </div>
                 <Button type="submit">Post Post</Button>
             </form>
         );
