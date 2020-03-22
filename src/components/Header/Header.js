@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Hyph } from '../Utils/Utils'
 import TokenService from '../../services/token-service'
 import IdleService from '../../services/idle-service'
 import './Header.css'
-import Logo from './logo.png';
+// import Mylogo from '../Logo'
+// import Logo from '../Logo/Logo'
 
 export default class Header extends Component {
   handleLogoutClick = () => {
@@ -46,6 +46,7 @@ export default class Header extends Component {
   render() {
     return (
       <nav className='Header'>
+        {/* <Logo /> */}
         <h1>
           <Link to='/'>
             {/* <img className='logophoto' src={Logo} alt='logo' /> */}
