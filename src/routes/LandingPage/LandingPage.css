@@ -1,3 +1,8 @@
 .LandingPage__header {
   padding: 45px 15px;
 }
+
+.heroimage {
+  width: 100vw;
+  height: 100vh;
+}

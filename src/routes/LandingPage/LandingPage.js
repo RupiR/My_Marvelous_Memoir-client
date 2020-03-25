@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import { Section } from "../../components/Utils/Utils";
 import "./LandingPage.css";
 
@@ -9,7 +9,7 @@ export default class LandingPage extends Component {
             <Section className="LandingPage">
                 <main role="main">
                     <header role="banner">
-                        <Link to='/loginpage'>
+                        <Link to='/'>
                             <img className='heroimage' src='/assets/heroimagepic.jpg' />
                         </Link>
                     </header>
@@ -18,9 +18,9 @@ export default class LandingPage extends Component {
                         <header>
                             <h1>Don't hold your feelings in, release them by writing.</h1>
                             ........................................................................................
-                            <h2>Experience My Marvelous Memoir using these login credientials</h2>
-                            <p>Username: Demouser</p>
-                            <p>Password: Demo1234!</p>
+                            <p>Experience My Marvelous Memoir using these login credientials</p>
+                            <h1><p>Username: Demouser</p>
+                                <p>Password: Demo1234!</p></h1>
 
                         </header>
                     </section>
