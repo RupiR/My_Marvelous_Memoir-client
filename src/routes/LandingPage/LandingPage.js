@@ -16,16 +16,18 @@ export default class LandingPage extends Component {
                     ........................................................................................
                 <section>
                         <header>
-                            <h1>Don't hold your feelings in, release them by writing.</h1>
-                            ........................................................................................
-                            <p>Experience My Marvelous Memoir using these login credientials</p>
+                            <h2>Experience My Marvelous Memoir using these login credientials</h2>
                             <h1><p>Username: Demouser</p>
                                 <p>Password: Demo1234!</p></h1>
+                                ........................................................................................
+                            <h1>Don't hold your feelings in, release them by writing.</h1>
+
+
 
                         </header>
                     </section>
                     ........................................................................................
-                <section>
+                <section className="personalpage">
                         <header>
                             <h3>Your personal diary</h3>
                         </header>

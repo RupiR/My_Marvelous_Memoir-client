@@ -14,6 +14,7 @@ import IdleService from "../../services/idle-service";
 import "./App.css";
 import LandingPage from "../../routes/LandingPage/LandingPage";
 import NewPostPage from "../../routes/NewPostPage/NewPostPage";
+import EditPostPage from "../../routes/EditPostPage/EditPostPage";
 
 class App extends Component {
   state = { hasError: false };
@@ -94,6 +95,7 @@ class App extends Component {
             <PublicOnlyRoute path={"/register"} component={RegistrationPage} />
             <PrivateRoute path={"/post/:postId"} component={PostPage} />
             <PrivateRoute path={"/addpost"} component={NewPostPage} />
+            <PrivateRoute path={"/edit/:postId"} component={EditPostPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </main>

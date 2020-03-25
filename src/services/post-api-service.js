@@ -9,6 +9,7 @@ const PostApiService = {
       !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
     );
   },
+
   getPost(postId) {
     return fetch(`${config.API_ENDPOINT}/posts/${postId}`, {
       headers: {
@@ -18,6 +19,7 @@ const PostApiService = {
       !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
     );
   },
+
   getPostComments(postId) {
     return fetch(`${config.API_ENDPOINT}/posts/${postId}/comments`, {
       headers: {
@@ -62,7 +64,16 @@ const PostApiService = {
           ? res.json().then(e => Promise.reject(e))
           : res.json()
       )
-  }
+  },
+
+  deletePost(postId) {
+    return fetch(`${config.API_ENDPOINT}/posts/${postId}`, {
+      method: "delete",
+      headers: {
+        authorization: `bearer ${TokenService.getAuthToken()}`
+      }
+    })
+  },
 };
 
 

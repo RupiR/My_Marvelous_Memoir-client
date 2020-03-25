@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PostContext, { nullPost } from "../../contexts/PostContext";
+import { Link } from 'react-router-dom';
 import PostApiService from "../../services/post-api-service";
 import { NiceDate, Hyph, Section } from "../../components/Utils/Utils";
 import StyleIcon from "../../components/StyleIcon/StyleIcon";
@@ -29,6 +30,14 @@ export default class PostPage extends Component {
     this.context.clearPost();
   }
 
+  deletePost = () => {
+    const { postId } = this.props.match.params;
+    PostApiService.deletePost(postId)
+      .then(() => {
+        this.props.history.push("/userpage")
+      })
+  }
+
   renderPost() {
     const { post, comments } = this.context;
     return (
@@ -46,9 +55,9 @@ export default class PostPage extends Component {
           <NiceDate date={post.date_created} />
         </p>
         <PostContent post={post} />
-        <button class="editButton">Edit Post</button>
+        <Link to={'/edit/' + post.id}>Edit Post</Link>
         &nbsp;&nbsp;&nbsp;
-        <button class="deleteButton">Delete Post</button>
+        <button class="deleteButton" onClick={this.deletePost}>Delete Post</button>
         <PostComments comments={comments} />
         <CommentForm />
       </>
