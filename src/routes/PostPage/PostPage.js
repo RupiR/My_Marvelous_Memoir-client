@@ -46,6 +46,7 @@ export default class PostPage extends Component {
           <NiceDate date={post.date_created} />
         </p>
         <PostContent post={post} />
+        <button class="deleteButton">Delete Post</button>
         <PostComments comments={comments} />
         <CommentForm />
       </>
