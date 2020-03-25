@@ -60,8 +60,8 @@ export default class PostPage extends Component {
         error.error === `Post doesn't exist` ? (
           <p className="red">Post not found</p>
         ) : (
-          <p className="red">There was an error</p>
-        );
+            <p className="red">There was an error</p>
+          );
     } else if (!post.id) {
       content = <div className="loading" />;
     } else {
@@ -73,8 +73,8 @@ export default class PostPage extends Component {
 
 function PostStyle({ post }) {
   return (
-    <span className="PostPage__style">
-      <StyleIcon style={post.style} /> {post.style}
+    <span className="PostPage__posttype">
+      {post.posttype}
     </span>
   );
 }
@@ -84,7 +84,7 @@ function PostAuthor({ post = nullPost }) {
 }
 
 function PostContent({ post }) {
-  return <p className="PostPage__content">{post.content}</p>;
+  return <p className="PostPage__summary">{post.summary}</p>;
 }
 
 function PostComments({ comments = [] }) {
