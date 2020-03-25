@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 import { Section } from "../../components/Utils/Utils";
 import "./LandingPage.css";
 
@@ -8,18 +9,23 @@ export default class LandingPage extends Component {
             <Section className="LandingPage">
                 <main role="main">
                     <header role="banner">
-                        <h1>Hero Image</h1>
+                        <Link to='/loginpage'>
+                            <img className='heroimage' src='/assets/heroimagepic.jpg' />
+                        </Link>
                     </header>
                     ........................................................................................
-                    <section>
+                <section>
                         <header>
-                            <h1>My Marvelous Memoir</h1>
+                            <h1>Don't hold your feelings in, release them by writing.</h1>
                             ........................................................................................
-                            <h2>Don't hold your feelings in, release them by writing.</h2>
+                            <h2>Experience My Marvelous Memoir using these login credientials</h2>
+                            <p>Username: Demouser</p>
+                            <p>Password: Demo1234!</p>
+
                         </header>
                     </section>
                     ........................................................................................
-                    <section>
+                <section>
                         <header>
                             <h3>Your personal diary</h3>
                         </header>
@@ -30,7 +36,7 @@ export default class LandingPage extends Component {
                         </p>
                     </section>
                     ........................................................................................
-                    <section>
+                <section>
                         <header>
                             <h3>Read public entries from other users</h3>
                         </header>
@@ -40,7 +46,7 @@ export default class LandingPage extends Component {
                         </p>
                     </section>
                 </main>
-            </Section>
+            </Section >
         );
     }
 }

@@ -47,6 +47,7 @@ export default class PostPage extends Component {
         </p>
         <PostContent post={post} />
         <button class="editButton">Edit Post</button>
+        &nbsp;&nbsp;&nbsp;
         <button class="deleteButton">Delete Post</button>
         <PostComments comments={comments} />
         <CommentForm />
