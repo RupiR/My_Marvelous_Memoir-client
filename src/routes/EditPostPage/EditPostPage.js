@@ -11,10 +11,10 @@ export default class EditPostForm extends Component {
         ev.preventDefault();
         const { post } = this.context;
         const { entrytitle, entrysummary, entrytype } = ev.target;
-        PostApiService.createPost(entrytitle.value, entrysummary.value, entrytype.value)
+        PostApiService.updatePost(entrytitle.value, entrysummary.value, entrytype.value, post.id)
             .then(this.context.addPost)
             .then(() => {
-                // ev.target.reset;
+                this.props.history.push('/userpage')
             })
             .catch(this.context.setError);
     };

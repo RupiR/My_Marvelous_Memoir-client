@@ -48,7 +48,7 @@ export default class Header extends Component {
         <h1>
           <Link to='/'>
             <img className='logophoto' src='/assets/mylogo.png' />
-            My Marvelous Memoir
+            <div className='title'>My Marvelous Memoir</div>
           </Link>
         </h1>
         {TokenService.hasAuthToken()

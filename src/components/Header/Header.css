@@ -12,7 +12,7 @@
 .Header h1 a {
   text-decoration: none;
   height: 100px;
-  width: 600px;
+  max-width: 600px;
   vertical-align: middle;
   display: flex;
   align-items: center;
@@ -38,10 +38,24 @@
   width: 100px;
 }
 
-@media screen and (min-width: 450px) {
-  .Header {
+/* mobile view */
+
+@media screen and (max-width: 450px) {
+  header {
     align-items: baseline;
+    padding: 0 !important;
   }
+  .Header h1 a {
+    padding: 0 !important;
+  }
+  .title {
+    padding-left: 10px;
+  }
+}
+
+/* desktop view */
+
+@media screen and (min-width: 450px) {
   .Header h1 {
     font-size: 22pt;
   }
