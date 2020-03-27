@@ -20,7 +20,7 @@ export default class Header extends Component {
           to='/userpage'>
           Userpage
         </Link>
-        <Hyph />
+        &nbsp;&nbsp;&nbsp;
         <Link
           onClick={this.handleLogoutClick}
           to='/'>
