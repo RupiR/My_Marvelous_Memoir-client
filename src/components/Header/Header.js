@@ -17,6 +17,11 @@ export default class Header extends Component {
     return (
       <div className='Header__logged-in'>
         <Link
+          to='/userpage'>
+          Userpage
+        </Link>
+        <Hyph />
+        <Link
           onClick={this.handleLogoutClick}
           to='/'>
           Logout
