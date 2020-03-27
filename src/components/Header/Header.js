@@ -49,7 +49,6 @@ export default class Header extends Component {
   render() {
     return (
       <nav className='Header'>
-        {/* <Logo /> */}
         <h1>
           <Link to='/'>
             <img className='logophoto' src='/assets/mylogo.png' />
