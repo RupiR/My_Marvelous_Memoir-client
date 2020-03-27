@@ -57,7 +57,7 @@ export default class EditPostForm extends Component {
                     <span>Public</span>
                     <div class="entrytypeexplanation">I would like this post to be public</div>
                 </label>
-                <Button type="submit">Post Post</Button>
+                <Button type="submit">Update</Button>
             </form>
         );
     }

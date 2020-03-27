@@ -18,6 +18,8 @@ import { PostProvider } from "./contexts/PostContext";
 import App from "./components/App/App";
 import "./index.css";
 
+console.log(process.env)
+
 library.add(
   faFrog, // logo
   faListUl, // style: listicle
