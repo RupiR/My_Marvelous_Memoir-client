@@ -37,7 +37,7 @@ export default class Header extends Component {
           to='/register'>
           Register
         </Link>
-        <Hyph />
+        &nbsp;&nbsp;&nbsp;
         <Link
           to='/login'>
           Login
