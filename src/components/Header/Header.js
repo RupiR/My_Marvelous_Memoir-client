@@ -17,6 +17,11 @@ export default class Header extends Component {
     return (
       <div className='Header__logged-in'>
         <Link
+          to='/postlistpage'>
+          Public Entries
+        </Link>
+        &nbsp;&nbsp;&nbsp;
+        <Link
           to='/userpage'>
           Userpage
         </Link>

@@ -55,11 +55,11 @@ export default class PostPage extends Component {
           <NiceDate date={post.date_created} />
         </p>
         <PostContent post={post} />
-        <button><Link to={'/edit/' + post.id}>Edit Post</Link></button>
+        <button><Link style={{ textDecoration: 'none', color: 'black' }} to={'/edit/' + post.id}>Edit Post</Link></button>
         &nbsp;&nbsp;&nbsp;
         <button class="deleteButton" onClick={this.deletePost}>Delete Post</button>
-        <PostComments comments={comments} />
-        <CommentForm />
+        {/* <PostComments comments={comments} />
+        <CommentForm /> */}
       </>
     );
   }
