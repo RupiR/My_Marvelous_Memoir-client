@@ -32,9 +32,9 @@ export default class LandingPage extends Component {
                             <h3>Your personal diary</h3>
                         </header>
                         <p>
-                            Studies have shown that one form of de-stressing is by writing
-                            down your feelings and emotions. My Marvelous Memoir allows you to
-                            create posts with the choice of making them public or private.{" "}
+                            <Link to='/loginpage'>
+                                <img className='postentryexample' src='/assets/postentryexample.jpg' />
+                            </Link>
                         </p>
                     </section>
                     ........................................................................................
