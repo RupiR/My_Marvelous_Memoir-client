@@ -38,7 +38,7 @@ export default class LandingPage extends Component {
                         </p>
                     </section>
                     ........................................................................................
-                <section>
+                {/* <section>
                         <header>
                             <h3>Read public entries from other users</h3>
                         </header>
@@ -46,7 +46,7 @@ export default class LandingPage extends Component {
                             Get inspiration by reading what other users have written. Comment
                             to share your opinion or to show your support
                         </p>
-                    </section>
+                    </section> */}
                 </main>
             </Section >
         );
