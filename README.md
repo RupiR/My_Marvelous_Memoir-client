@@ -1,6 +1,6 @@
 # My Marvelous Memoir
 
-An online personal diary app that allows you to create daily posts.
+An online personal diary app that allows you to create daily posts which you can edit and delete at anytime.
 
 ## Motivation
 
@@ -8,17 +8,17 @@ An online personal diary app that allows you to create daily posts.
 
 ## Recommended Usage
 
-**For testing purposes, we recommend you test our web app with the Username: Demouser and Password: Demo1234!."**
+**For testing purposes, we recommend you test our web app with the Username: Demouser and Password: Demo1234!**
 
 ## Screenshots
 
 <!-- Landing Page:
 
-![landing page](screenshots/landing.png)
+![landing page](screenshots/landing.png) -->
 
-Lyrics:
+Add New Entry:
 
-![lyrics](screenshots/lyrics.png) -->
+![Add New Entry](screenshots/newpostscreenshot.PNG)
 
 Post Example:
 

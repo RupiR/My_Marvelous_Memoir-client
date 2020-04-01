@@ -18,7 +18,7 @@ export default class NewPostPage extends Component {
     render() {
         return (
             <Section className='NewPostPage'>
-                <h2>Login</h2>
+                <h2>Add New Entry</h2>
                 <NewPostForm />
             </Section>
         )
