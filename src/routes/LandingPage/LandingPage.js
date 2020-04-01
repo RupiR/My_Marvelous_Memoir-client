@@ -19,10 +19,6 @@ export default class LandingPage extends Component {
                             <h2>Experience My Marvelous Memoir using these login credientials</h2>
                             <h1><p>Username: Demouser</p>
                                 <p>Password: Demo1234!</p></h1>
-                            <h1 className="dots">........................................................................................</h1>
-
-
-
                         </header>
                     </section>
                     <h1 className="dots">........................................................................................</h1>
