@@ -9,12 +9,12 @@ const PostContext = React.createContext({
   post: nullPost,
   comments: [],
   error: null,
-  setError: () => {},
-  clearError: () => {},
-  setPost: () => {},
-  clearPost: () => {},
-  setComments: () => {},
-  addComment: () => {}
+  setError: () => { },
+  clearError: () => { },
+  setPost: () => { },
+  clearPost: () => { },
+  setComments: () => { },
+  addComment: () => { }
 });
 
 export default PostContext;

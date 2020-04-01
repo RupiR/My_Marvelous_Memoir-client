@@ -7,7 +7,7 @@
 
 let _timeoutId
 let _idleCallback = null
-let _notIdleEvents = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart' ]
+let _notIdleEvents = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart']
 let _FIVE_MINUTES_IN_MS = 5 * 60 * 1000
 
 const IdleService = {
@@ -17,7 +17,6 @@ const IdleService = {
   },
   /* called when a user interacts with the page */
   resetIdleTimer(ev) {
-    console.info('event:', ev.type)
     /* remove any timeouts as the user just interacted */
     clearTimeout(_timeoutId)
     /* queue the callback to happen 5 minutes from now */

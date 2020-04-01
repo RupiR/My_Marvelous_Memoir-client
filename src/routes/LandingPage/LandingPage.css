@@ -10,15 +10,15 @@
 }
 
 .heroimage {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 10px;
   border: 10px solid rgb(39, 37, 37);
 }
 
 .screenshotpost {
-  width: 75%;
-  height: 75%;
+  width: 100%;
+  height: 100%;
   padding: 10px;
   border: 10px solid rgb(39, 37, 37);
 }

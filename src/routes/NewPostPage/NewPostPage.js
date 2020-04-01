@@ -11,7 +11,7 @@ export default class NewPostPage extends Component {
     }
 
     handleLoginSuccess = () => {
-        const { location, history } = this.props
+        const { history } = this.props
         history.push("/userpage")
     }
 
@@ -19,7 +19,7 @@ export default class NewPostPage extends Component {
         return (
             <Section className='NewPostPage'>
                 <h2>Add New Entry</h2>
-                <NewPostForm />
+                <NewPostForm handleLoginSuccess={this.handleLoginSuccess} />
             </Section>
         )
     }
