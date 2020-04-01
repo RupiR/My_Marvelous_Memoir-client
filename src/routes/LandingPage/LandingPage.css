@@ -1,3 +1,10 @@
+.LandingPage {
+  background-color: black;
+  color: #0fcbe0;
+  justify-content: center;
+  align-items: center;
+}
+
 .LandingPage__header {
   padding: 45px 15px;
 }
@@ -6,10 +13,25 @@
   width: 100vw;
   height: 100vh;
   padding: 10px;
+  border: 10px solid white;
 }
 
 .screenshotpost {
-  width: 100vw;
-  height: 100vh;
-  border: 2px solid rgb(39, 37, 37);
+  width: 75%;
+  height: 75%;
+  padding: 10px;
+  border: 10px solid rgb(39, 37, 37);
+}
+
+.dots {
+  text-decoration: none;
+  color: #f29898;
+}
+
+.personalpage {
+  text-decoration: none;
+  background-color: black;
+  color: #0fcbe0;
+  justify-content: center;
+  align-items: center;
 }

@@ -13,32 +13,31 @@ export default class LandingPage extends Component {
                             <img className='heroimage' src='/assets/heroimagepic.jpg' />
                         </Link>
                     </header>
-                    style={{ textDecoration: 'none', color: 'pink' }} ........................................................................................
-                <section>
+                    <h1 className="dots" >........................................................................................</h1>
+                    <section>
                         <header>
                             <h2>Experience My Marvelous Memoir using these login credientials</h2>
                             <h1><p>Username: Demouser</p>
                                 <p>Password: Demo1234!</p></h1>
-                                ........................................................................................
-                            <h1>Don't hold your feelings in, release them by writing.</h1>
+                            <h1 className="dots">........................................................................................</h1>
 
 
 
                         </header>
                     </section>
-                    ........................................................................................
-                <section className="personalpage">
+                    <h1 className="dots">........................................................................................</h1>
+                    <section className="personalpage">
                         <header>
                             <h3>Your personal diary</h3>
                         </header>
                         <p>
                             <Link to='/loginpage'>
-                                <img className='screenshotpost' src='/assets/screenshotpost.jpg' />
+                                <img className='screenshotpost' src='/assets/screenshotpost.png' />
                             </Link>
                         </p>
                     </section>
-                    ........................................................................................
-                {/* <section>
+
+                    {/* <section>
                         <header>
                             <h3>Read public entries from other users</h3>
                         </header>

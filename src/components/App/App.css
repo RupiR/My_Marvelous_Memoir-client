@@ -1,15 +1,17 @@
 .App {
   height: 100vh;
   padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   margin: 0 auto;
+  color: #0fcbe0;
+  background-color: black;
 }
 
 .App__header {
   padding-left: 20px;
   padding-right: 20px;
-  height: 100px;
-  background-color: #f7d7cc;
+  height: 150px;
+  background-color: #1a1818;
   justify-content: center;
   align-items: center;
 }

@@ -21,7 +21,7 @@
 }
 
 .Header a {
-  color: #444;
+  color: #f3d3c7;
 }
 
 .Header__not-logged-in {
@@ -33,9 +33,9 @@
   display: flex;
 }
 
-.logophoto {
-  height: 100px;
-  width: 100px;
+.computerlogo {
+  height: 200px;
+  width: 200px;
 }
 
 /* mobile view */

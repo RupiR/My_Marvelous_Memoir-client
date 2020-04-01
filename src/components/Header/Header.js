@@ -51,9 +51,9 @@ export default class Header extends Component {
       <nav className='Header'>
         <h1>
           <Link to='/'>
-            <img className='logophoto' src='/assets/mylogo.png' />
+            <img className='computerlogo' src='/assets/computerlogo.png' />
             &nbsp;&nbsp;&nbsp;
-            <div className='title'>My Marvelous Memoir</div>
+            {/* <div className='title'>My Marvelous Memoir</div> */}
           </Link>
         </h1>
         {TokenService.hasAuthToken()
