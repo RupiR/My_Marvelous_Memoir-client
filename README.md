@@ -22,7 +22,7 @@ Lyrics:
 
 Post Example:
 
-![post example](screenshots/screenshotpost.png)
+![Post Entries](screenshots/screenshotpost.PNG)
 
 ## Built With
 
@@ -31,6 +31,7 @@ Post Example:
 - Javascript
 - jQuery
 - React
+- Express
 - Node
 - JWT
 
