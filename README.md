@@ -22,7 +22,7 @@ Lyrics:
 
 Post Example:
 
-![post example](public/build/assets/screenshotpost.png)
+![post example](screenshots/screenshotpost.png)
 
 ## Built With
 
