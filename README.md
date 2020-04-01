@@ -22,7 +22,7 @@ Lyrics:
 
 Post Example:
 
-![Post Entries](screenshots/screenshotpost.PNG)
+![Post Entries](screenshots/postscreenshot.PNG)
 
 ## Built With
 
