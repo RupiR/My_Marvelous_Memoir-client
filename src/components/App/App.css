@@ -1,10 +1,8 @@
 .App {
   height: 100vh;
   padding-top: 20px;
-  /* padding-bottom: 20px; */
+  padding-bottom: 20px;
   margin: 0 auto;
-  color: #0fcbe0;
-  background-color: black;
 }
 
 .App__header {
