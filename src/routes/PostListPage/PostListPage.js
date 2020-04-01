@@ -24,7 +24,7 @@ export default class PostListPage extends Component {
     const { error } = this.context;
     return (
       <Section list className="PostListPage">
-        <Link to="/addpost">Add New Post</Link>
+        <button style={{ textDecoration: 'none', color: 'black' }}><Link to="/addpost">Add New Post</Link></button>
         {error ? (
           <p className="red">There was an error, try again</p>
         ) : (
