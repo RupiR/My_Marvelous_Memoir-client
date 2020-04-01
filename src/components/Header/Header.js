@@ -52,6 +52,7 @@ export default class Header extends Component {
         <h1>
           <Link to='/'>
             <img className='logophoto' src='/assets/mylogo.png' />
+            &nbsp;&nbsp;&nbsp;
             <div className='title'>My Marvelous Memoir</div>
           </Link>
         </h1>

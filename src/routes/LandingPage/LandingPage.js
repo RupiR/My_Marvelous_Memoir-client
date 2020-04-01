@@ -13,7 +13,7 @@ export default class LandingPage extends Component {
                             <img className='heroimage' src='/assets/heroimagepic.jpg' />
                         </Link>
                     </header>
-                    ........................................................................................
+                    style={{ textDecoration: 'none', color: 'pink' }} ........................................................................................
                 <section>
                         <header>
                             <h2>Experience My Marvelous Memoir using these login credientials</h2>
@@ -33,7 +33,7 @@ export default class LandingPage extends Component {
                         </header>
                         <p>
                             <Link to='/loginpage'>
-                                <img className='postentryexample' src='/assets/postentryexample.jpg' />
+                                <img className='screenshotpost' src='/assets/screenshotpost.jpg' />
                             </Link>
                         </p>
                     </section>
