@@ -10,9 +10,8 @@ It has proven over and over again that keeping a journal/private dairy has been 
 
 For testing purposes, I recommend you test our web app with the following login credentials -
 
-Username: Demouser
-
-Password: Demo1234!
+- Username: Demouser
+- Password: Demo1234!
 
 ## Screenshots
 
