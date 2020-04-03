@@ -28,7 +28,7 @@ export default class LandingPage extends Component {
                         </header>
                         <p>
                             <Link to='/loginpage'>
-                                <img className='screenshotpost' src='/assets/screenshotpost.png' />
+                                <img className='screenshotpost' src='/assets/screenshotpost.PNG' />
                             </Link>
                         </p>
                     </section>
