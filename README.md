@@ -31,8 +31,9 @@ Post Example:
 - Javascript
 - jQuery
 - React
+- PostgreSQL
 - Express
-- Node
+- Node.js
 - JWT
 
 ## Demo
