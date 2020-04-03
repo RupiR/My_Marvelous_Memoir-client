@@ -27,9 +27,9 @@ export default class LandingPage extends Component {
                             <h3>Your personal diary</h3>
                         </header>
                         <p>
-                            <Link to='/loginpage'>
-                                <img className='screenshotpost' src='/assets/screenshotpost.PNG' />
-                            </Link>
+
+                            <img className='screenshotpost' src='/assets/screenshotpost.PNG' />
+
                         </p>
                     </section>
                 </main>
