@@ -32,16 +32,6 @@ export default class LandingPage extends Component {
                             </Link>
                         </p>
                     </section>
-
-                    {/* <section>
-                        <header>
-                            <h3>Read public entries from other users</h3>
-                        </header>
-                        <p>
-                            Get inspiration by reading what other users have written. Comment
-                            to share your opinion or to show your support
-                        </p>
-                    </section> */}
                 </main>
             </Section >
         );
