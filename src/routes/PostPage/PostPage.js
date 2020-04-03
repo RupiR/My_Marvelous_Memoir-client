@@ -4,7 +4,6 @@ import PostContext, { nullPost } from "../../contexts/PostContext";
 import { Link } from 'react-router-dom';
 import PostApiService from "../../services/post-api-service";
 import { NiceDate, Hyph, Section } from "../../components/Utils/Utils";
-import StyleIcon from "../../components/StyleIcon/StyleIcon";
 import CommentForm from "../../components/CommentForm/CommentForm";
 import "./PostPage.css";
 

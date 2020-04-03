@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PostContext from "../../contexts/PostContext";
 import PostApiService from "../../services/post-api-service";
-import { Button, Textarea } from "../Utils/Utils";
+import { Button } from "../Utils/Utils";
 
 
 export default class NewPostForm extends Component {

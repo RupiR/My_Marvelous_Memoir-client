@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PostContext from "../../contexts/PostContext";
 import PostApiService from "../../services/post-api-service";
-import { Button, Textarea } from "../../components/Utils/Utils";
+import { Button } from "../../components/Utils/Utils";
 
 
 export default class EditPostForm extends Component {
@@ -31,7 +31,7 @@ export default class EditPostForm extends Component {
     }
 
     render() {
-        const { post, comments } = this.context;
+        const { post } = this.context;
         return (
             <form className="NewPostForm" onSubmit={this.handleSubmit}>
                 <div class="form-section">

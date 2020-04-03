@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Hyph } from '../Utils/Utils'
 import TokenService from '../../services/token-service'
 import IdleService from '../../services/idle-service'
 import './Header.css'
@@ -51,7 +50,7 @@ export default class Header extends Component {
       <nav className='Header'>
         <h1>
           <Link to='/'>
-            <img className='computerlogo' src='/assets/computerlogo.png' />
+            <img className='computerlogo' alt="computerlogo" src='/assets/computerlogo.png' />
             &nbsp;&nbsp;&nbsp;
             {/* <div className='title'>My Marvelous Memoir</div> */}
           </Link>

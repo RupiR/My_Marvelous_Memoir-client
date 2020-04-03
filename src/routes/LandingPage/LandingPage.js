@@ -10,7 +10,7 @@ export default class LandingPage extends Component {
                 <main role="main">
                     <header role="banner">
                         <Link to='/'>
-                            <img className='heroimage' src='/assets/heroimagepic.jpg' />
+                            <img className='heroimage' alt="heroimage" src='/assets/heroimagepic.jpg' />
                         </Link>
                     </header>
                     <h1 className="dots" >........................................................................................</h1>
@@ -28,7 +28,7 @@ export default class LandingPage extends Component {
                         </header>
                         <p>
 
-                            <img className='screenshotpost' src='/assets/screenshotpost.PNG' />
+                            <img className='screenshotpost' alt="screenshotpost" src='/assets/screenshotpost.PNG' />
 
                         </p>
                     </section>
