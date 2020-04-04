@@ -2,7 +2,7 @@
 
 An online personal diary app that allows you to create daily posts which you can edit and delete at anytime.
 
-## Motivation
+## Purpose
 
 It has proven over and over again that keeping a journal/private dairy has been effective in helping with anxiety. As someone who suffers from anxiety myself, I wanted to create an app to help people suffering from stress/anxiety that they could use from anywhere.
 
