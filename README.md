@@ -34,6 +34,7 @@ Post Example:
 - Express
 - Node.js
 - JWT
+- Heroku/Zeit
 
 ## Demo
 
