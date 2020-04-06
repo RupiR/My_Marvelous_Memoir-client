@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewPostForm /> renders correctly 1`] = `
+<form
+  className="NewPostForm"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-section"
+  >
+    <label
+      htmlFor="entrytitle"
+    >
+      Entry title
+    </label>
+    <input
+      name="entrytitle"
+      placeholder="Feeling happy"
+      required={true}
+      type="text"
+    />
+  </div>
+  <div
+    className="form-section"
+  >
+    <label
+      htmlFor="entrysummary"
+    >
+      Entry
+    </label>
+    <textarea
+      name="entrysummary"
+      required={true}
+      rows="15"
+    />
+  </div>
+  <p>
+    Select private or public
+  </p>
+  <input
+    className="entry-type-radio"
+    defaultChecked={true}
+    name="entrytype"
+    type="radio"
+    value="0"
+  />
+  <label
+    htmlFor="entrytype"
+  >
+    <span>
+      Private
+    </span>
+    <div
+      className="entrytypeexplanation"
+    >
+      I would like this post to be private
+    </div>
+  </label>
+  <input
+    className="entry-type-radio"
+    name="entrytype"
+    type="radio"
+    value="1"
+  />
+  <label
+    htmlFor="entrytype"
+  >
+    <span>
+      Public
+    </span>
+    <div
+      className="entrytypeexplanation"
+    >
+      I would like this post to be public
+    </div>
+  </label>
+  <button
+    className="Button "
+    type="submit"
+  >
+    Post
+  </button>
+</form>
+`;

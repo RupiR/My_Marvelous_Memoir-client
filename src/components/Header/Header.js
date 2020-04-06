@@ -21,6 +21,11 @@ export default class Header extends Component {
         </Link>
         &nbsp;&nbsp;&nbsp;
         <Link
+          to='/posts'>
+          Public Posts
+        </Link>
+        &nbsp;&nbsp;&nbsp;
+        <Link
           onClick={this.handleLogoutClick}
           to='/'>
           Logout

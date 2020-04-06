@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CommentForm /> renders correctly 1`] = `
+<form
+  className="CommentForm"
+  onSubmit={[Function]}
+>
+  <div
+    className="text"
+  >
+    <textarea
+      aria-label="Type a comment..."
+      className="Textarea "
+      cols="30"
+      id="text"
+      name="text"
+      placeholder="Type a comment.."
+      required={true}
+      rows="3"
+    />
+  </div>
+  <button
+    className="Button "
+    type="submit"
+  >
+    Post comment
+  </button>
+</form>
+`;

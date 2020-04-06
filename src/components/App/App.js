@@ -15,6 +15,7 @@ import "./App.css";
 import LandingPage from "../../routes/LandingPage/LandingPage";
 import NewPostPage from "../../routes/NewPostPage/NewPostPage";
 import EditPostPage from "../../routes/EditPostPage/EditPostPage";
+import UserListPage from "../../routes/UserListPage/UserListPage";
 
 class App extends Component {
   state = { hasError: false };
@@ -90,7 +91,8 @@ class App extends Component {
           )}
           <Switch>
             <Route exact path={"/"} component={LandingPage} />
-            <PrivateRoute exact path={"/userpage"} component={PostListPage} />
+            <PrivateRoute exact path={"/userpage"} component={UserListPage} />
+            <PrivateRoute exact path={"/posts"} component={PostListPage} />
             <PublicOnlyRoute path={"/login"} component={LoginPage} />
             <PublicOnlyRoute path={"/register"} component={RegistrationPage} />
             <PrivateRoute path={"/post/:postId"} component={PostPage} />
