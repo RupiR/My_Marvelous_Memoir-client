@@ -5,7 +5,7 @@ import RegistrationForm from '../../components/RegistrationForm/RegistrationForm
 export default class RegistrationPage extends Component {
   static defaultProps = {
     history: {
-      push: () => {},
+      push: () => { },
     },
   }
 
@@ -17,6 +17,13 @@ export default class RegistrationPage extends Component {
   render() {
     return (
       <Section className='RegistrationPage'>
+        <>
+          <header>
+            <h2>Experience My Marvelous Memoir using these login credientials</h2>
+            <h1><p>Username: Demouser</p>
+              <p>Password: Demo1234!</p></h1>
+          </header>
+        </>,
         <h2>Register</h2>
         <RegistrationForm
           onRegistrationSuccess={this.handleRegistrationSuccess}
