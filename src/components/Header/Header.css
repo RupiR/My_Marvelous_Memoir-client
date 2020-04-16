@@ -21,12 +21,11 @@
 }
 
 .Header a {
-  color: #004249;
+  color: #062d30;
 }
 
 .Header__not-logged-in {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
 }
 
