@@ -17,6 +17,13 @@ export default class LoginPage extends Component {
   render() {
     return (
       <Section className='LoginPage'>
+        <>
+          <header>
+            <h2>Experience My Marvelous Memoir using these login credientials</h2>
+            <h1><p>Username: Demouser</p>
+              <p>Password: Demo1234!</p></h1>
+          </header>
+        </>,
         <h2>Login</h2>
         <LoginForm
           onLoginSuccess={this.handleLoginSuccess}
