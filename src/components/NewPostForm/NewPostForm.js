@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PostContext from "../../contexts/PostContext";
 import PostApiService from "../../services/post-api-service";
 import { Button } from "../Utils/Utils";
+import './NewPostForm.css'
 
 
 export default class NewPostForm extends Component {

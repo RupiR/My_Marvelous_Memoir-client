@@ -72,7 +72,6 @@ export default class Header extends Component {
         <h1>
           <Link to='/'>
             <img className='computerlogo' alt="computerlogo" src='/assets/computerlogo.png' />
-            &nbsp;&nbsp;&nbsp;
             {/* <div className='title'>My Marvelous Memoir</div> */}
           </Link>
         </h1>
