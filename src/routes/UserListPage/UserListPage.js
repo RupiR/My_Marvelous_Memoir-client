@@ -17,7 +17,7 @@ export default class UserListPage extends Component {
 
   renderPosts() {
     const { postList = [] } = this.context;
-    return postList.filter(post => post.author.id == localStorage.userId).map(post => <PostListItem key={post.id} post={post} />);
+    return postList.filter(post => post.author.id === localStorage.userId).map(post => <PostListItem key={post.id} post={post} />);
   }
 
   render() {

@@ -10,7 +10,6 @@ export default class NewPostForm extends Component {
 
     handleSubmit = ev => {
         ev.preventDefault();
-        const { post } = this.context;
         const { entrytitle, entrysummary, entrytype } = ev.target;
         PostApiService.createPost(entrytitle.value, entrysummary.value, entrytype.value)
             .then(data => {

@@ -17,7 +17,8 @@ export default class PostListPage extends Component {
 
   renderPosts() {
     const { postList = [] } = this.context;
-    return postList.filter(post => post.posttype == "0" || post.author.id == localStorage.userId).map(post => <PostListItem key={post.id} post={post} />);
+    const id = parseInt(localStorage.userId)
+    return postList.filter(post => post.posttype === "0" || post.author.id === id).map(post => <PostListItem key={post.id} post={post} />);
   }
 
   render() {

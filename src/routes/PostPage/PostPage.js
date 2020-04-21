@@ -55,7 +55,7 @@ export default class PostPage extends Component {
         </p>
         <PostContent post={post} />
         {
-          localStorage.userId == post.author.id ? (<>
+          localStorage.userId === post.author.id ? (<>
             <button><Link style={{ textDecoration: 'none', color: 'black' }} to={'/edit/' + post.id}>Edit Post</Link></button>
         &nbsp;&nbsp;&nbsp;
             <button class="deleteButton" onClick={this.deletePost}>Delete Post</button>

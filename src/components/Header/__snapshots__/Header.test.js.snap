@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders correctly 1`] = `
+<nav
+  className="Header"
+>
+  <h1>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="computerlogo"
+        className="computerlogo"
+        src="/assets/computerlogo.png"
+      />
+    </a>
+  </h1>
+  <div
+    className="Header__not-logged-in"
+  >
+    <a
+      href="/register"
+      onClick={[Function]}
+    >
+      Register
+    </a>
+       
+    <a
+      href="/login"
+      onClick={[Function]}
+    >
+      Login
+    </a>
+  </div>
+</nav>
+`;
