@@ -5,6 +5,9 @@ import IdleService from '../../services/idle-service'
 import './Header.css'
 
 export default class Header extends Component {
+  state = {
+    showMenu: window.screen.width < 500 ? false : true
+  }
   handleLogoutClick = () => {
     TokenService.clearAuthToken()
     /* when logging out, clear the callbacks to the refresh api and idle auto logout */
@@ -50,7 +53,19 @@ export default class Header extends Component {
     )
   }
 
+  toggleMenu = () => {
+    this.setState({
+      showMenu: !this.state.showMenu
+    })
+  }
+
   render() {
+    let menu
+    if (this.state.showMenu) {
+      menu = TokenService.hasAuthToken()
+        ? this.renderLogoutLink()
+        : this.renderLoginLink()
+    }
     return (
       <nav className='Header'>
         <h1>
@@ -58,9 +73,11 @@ export default class Header extends Component {
             <img className='computerlogo' alt="computerlogo" src='/assets/computerlogo.png' />
           </Link>
         </h1>
-        {TokenService.hasAuthToken()
-          ? this.renderLogoutLink()
-          : this.renderLoginLink()}
+
+        {menu}
+        <div className='hamburgermenu'>
+          <button onClick={this.toggleMenu}>&#9776;</button>
+        </div>
       </nav>
     )
   }
