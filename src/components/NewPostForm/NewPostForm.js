@@ -22,7 +22,7 @@ export default class NewPostForm extends Component {
         return (
             <form className="NewPostForm" onSubmit={this.handleSubmit}>
                 <div className="form-section">
-                    <label htmlFor="entrytitle">Entry title</label>
+                    <label htmlFor="entrytitle">Title</label>
                     <input type="text" name="entrytitle" placeholder="Feeling happy" required />
                 </div>
 
