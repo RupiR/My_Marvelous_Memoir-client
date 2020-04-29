@@ -23,21 +23,13 @@ exports[`<App /> renders correctly 1`] = `
         </a>
       </h1>
       <div
-        className="Header__not-logged-in"
+        className="hamburgermenu"
       >
-        <a
-          href="/register"
+        <button
           onClick={[Function]}
         >
-          Register
-        </a>
-           
-        <a
-          href="/login"
-          onClick={[Function]}
-        >
-          Login
-        </a>
+          ☰
+        </button>
       </div>
     </nav>
   </header>

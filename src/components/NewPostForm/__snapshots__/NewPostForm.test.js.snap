@@ -11,7 +11,7 @@ exports[`<NewPostForm /> renders correctly 1`] = `
     <label
       htmlFor="entrytitle"
     >
-      Entry title
+      Title
     </label>
     <input
       name="entrytitle"
