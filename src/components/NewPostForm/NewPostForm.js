@@ -22,28 +22,29 @@ export default class NewPostForm extends Component {
         return (
             <form className="NewPostForm" onSubmit={this.handleSubmit}>
                 <div className="form-section">
-                    <label htmlFor="entrytitle">Title</label>
+                    <label htmlFor="entrytitle" style={{ fontWeight: "bold" }}>Title</label> &nbsp;&nbsp;&nbsp;
                     <input type="text" name="entrytitle" placeholder="Feeling happy" required />
                 </div>
-
+                &nbsp;&nbsp;&nbsp;
                 <div className="form-section">
-                    <label htmlFor="entrysummary">Entry</label>
+                    <label htmlFor="entrysummary" style={{ fontWeight: "bold" }}>Entry</label> &nbsp;&nbsp;&nbsp;
                     <textarea name="entrysummary" rows="15" required></textarea>
                 </div>
 
-                <p>Select private or public</p>
+                <p style={{ fontWeight: "bold" }}>Select private or public:</p>
+                <div className="privatepublic">
+                    <input type="radio" name="entrytype" value="0" className="entry-type-radio" defaultChecked />
+                    <label htmlFor="entrytype">
+                        <span>Private</span>
+                        {/* <div className="entrytypeexplanation">I would like this post to be private</div> */}
+                    </label>
 
-                <input type="radio" name="entrytype" value="0" className="entry-type-radio" defaultChecked />
-                <label htmlFor="entrytype">
-                    <span>Private</span>
-                    <div className="entrytypeexplanation">I would like this post to be private</div>
-                </label>
-
-                <input type="radio" name="entrytype" value="1" className="entry-type-radio" />
-                <label htmlFor="entrytype">
-                    <span>Public</span>
-                    <div className="entrytypeexplanation">I would like this post to be public</div>
-                </label>
+                    <input type="radio" name="entrytype" value="1" className="entry-type-radio" />
+                    <label htmlFor="entrytype">
+                        <span>Public</span>
+                        {/* <div className="entrytypeexplanation">I would like this post to be public</div> */}
+                    </label>
+                </div>
                 <Button type="submit">Post</Button>
             </form>
         );
