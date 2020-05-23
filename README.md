@@ -64,4 +64,4 @@ API endpoints
 
 ## Author
 
-- **Rupali Rajput** - Front-End development / Back-End development / Styling
+- [**Rupali Rajput**](https://github.com/RupiR) - Front-End development / Back-End development / Styling
