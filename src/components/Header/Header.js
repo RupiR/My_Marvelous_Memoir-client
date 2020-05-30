@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import TokenService from '../../services/token-service'
-import IdleService from '../../services/idle-service'
-import './Header.css'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import TokenService from '../../services/token-service';
+import IdleService from '../../services/idle-service';
+import './Header.css';
 
 export default class Header extends Component {
   state = {
@@ -13,7 +13,7 @@ export default class Header extends Component {
     /* when logging out, clear the callbacks to the refresh api and idle auto logout */
     TokenService.clearCallbackBeforeExpiry()
     IdleService.unRegisterIdleResets()
-  }
+  };
 
   renderLogoutLink() {
     return (
@@ -35,7 +35,7 @@ export default class Header extends Component {
         </Link>
       </div>
     )
-  }
+  };
 
   renderLoginLink() {
     return (
@@ -51,13 +51,13 @@ export default class Header extends Component {
         </Link>
       </div>
     )
-  }
+  };
 
   toggleMenu = () => {
     this.setState({
       showMenu: !this.state.showMenu
-    })
-  }
+    });
+  };
 
   render() {
     let menu
@@ -80,5 +80,5 @@ export default class Header extends Component {
         </div>
       </nav>
     )
-  }
-}
+  };
+};

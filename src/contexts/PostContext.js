@@ -69,4 +69,4 @@ export class PostProvider extends Component {
       </PostContext.Provider>
     );
   }
-}
+};

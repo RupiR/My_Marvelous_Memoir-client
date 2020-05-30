@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import AuthApiService from '../../services/auth-api-service'
-import { Button, Input } from '../Utils/Utils'
+import React, { Component } from 'react';
+import AuthApiService from '../../services/auth-api-service';
+import { Button, Input } from '../Utils/Utils';
 
 export default class LoginForm extends Component {
   static defaultProps = {
     onLoginSuccess: () => { }
-  }
+  };
 
   state = { error: null }
 
@@ -26,7 +26,7 @@ export default class LoginForm extends Component {
       .catch(res => {
         this.setState({ error: res.error })
       })
-  }
+  };
 
   render() {
     const { error } = this.state
@@ -66,4 +66,4 @@ export default class LoginForm extends Component {
       </form>
     )
   }
-}
+};

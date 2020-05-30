@@ -42,4 +42,4 @@ export class PostListProvider extends Component {
       </PostListContext.Provider>
     );
   }
-}
+};

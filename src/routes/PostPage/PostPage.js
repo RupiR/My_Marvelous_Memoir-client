@@ -23,11 +23,11 @@ export default class PostPage extends Component {
     PostApiService.getPostComments(postId)
       .then(this.context.setComments)
       .catch(this.context.setError);
-  }
+  };
 
   componentWillUnmount() {
     this.context.clearPost();
-  }
+  };
 
   deletePost = () => {
     const { postId } = this.props.match.params;
@@ -35,7 +35,7 @@ export default class PostPage extends Component {
       .then(() => {
         this.props.history.push("/userpage")
       })
-  }
+  };
 
   renderPost() {
     const { post, comments } = this.context;
@@ -67,7 +67,7 @@ export default class PostPage extends Component {
         <CommentForm />
       </>
     );
-  }
+  };
 
   render() {
     const { error, post } = this.context;
@@ -86,7 +86,7 @@ export default class PostPage extends Component {
     }
     return <Section className="PostPage">{content}</Section>;
   }
-}
+};
 
 function PostStyle({ post }) {
   return (
@@ -94,15 +94,15 @@ function PostStyle({ post }) {
       {post.posttype}
     </span>
   );
-}
+};
 
 function PostAuthor({ post = nullPost }) {
   return <span className="PostPage__author">{post.author.full_name}</span>;
-}
+};
 
 function PostContent({ post }) {
   return <p className="PostPage__summary">{post.summary}</p>;
-}
+};
 
 function PostComments({ comments = [] }) {
   return (
@@ -122,4 +122,4 @@ function PostComments({ comments = [] }) {
       ))}
     </ul>
   );
-}
+};

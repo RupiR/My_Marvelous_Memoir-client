@@ -13,13 +13,13 @@ export default class PostListPage extends Component {
     PostApiService.getPosts()
       .then(this.context.setPostList)
       .catch(this.context.setError);
-  }
+  };
 
   renderPosts() {
     const { postList = [] } = this.context;
     // const id = parseInt(localStorage.userId)
     return postList.filter(post => post.posttype === "1").map(post => <PostListItem key={post.id} post={post} />);
-  }
+  };
 
   render() {
     const { error } = this.context;
@@ -34,4 +34,4 @@ export default class PostListPage extends Component {
       </Section>
     );
   }
-}
+};

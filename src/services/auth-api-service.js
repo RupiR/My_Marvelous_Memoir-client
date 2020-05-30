@@ -1,6 +1,6 @@
-import config from '../config'
-import TokenService from './token-service'
-import IdleService from './idle-service'
+import config from '../config';
+import TokenService from './token-service';
+import IdleService from './idle-service';
 
 const AuthApiService = {
   postUser(user) {
@@ -74,6 +74,6 @@ const AuthApiService = {
         console.error(err)
       })
   },
-}
+};
 
 export default AuthApiService

@@ -28,7 +28,7 @@ export default class EditPostForm extends Component {
         PostApiService.getPostComments(postId)
             .then(this.context.setComments)
             .catch(this.context.setError);
-    }
+    };
 
     render() {
         const { post } = this.context;
@@ -61,4 +61,4 @@ export default class EditPostForm extends Component {
             </form>
         );
     }
-}
+};

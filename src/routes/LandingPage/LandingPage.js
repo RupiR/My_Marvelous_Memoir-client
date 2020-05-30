@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { Section } from "../../components/Utils/Utils";
 import "./LandingPage.css";
 
@@ -36,4 +36,4 @@ export default class LandingPage extends Component {
             </Section >
         );
     }
-}
+};

@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import { Button, Input, Required } from '../Utils/Utils'
-import AuthApiService from '../../services/auth-api-service'
+import React, { Component } from 'react';
+import { Button, Input, Required } from '../Utils/Utils';
+import AuthApiService from '../../services/auth-api-service';
 
 export default class RegistrationForm extends Component {
   static defaultProps = {
     onRegistrationSuccess: () => { }
-  }
+  };
 
   state = { error: null }
 
@@ -30,7 +30,7 @@ export default class RegistrationForm extends Component {
       .catch(res => {
         this.setState({ error: res.error })
       })
-  }
+  };
 
   render() {
     const { error } = this.state
@@ -92,4 +92,4 @@ export default class RegistrationForm extends Component {
       </form>
     )
   }
-}
+};
