@@ -16,9 +16,8 @@ export default class LandingPage extends Component {
                     <h1 className="dots" >........................................................................................</h1>
                     <section>
                         <header>
-                            <h2>Experience My Marvelous Memoir using these login credientials</h2>
-                            <h1><p>Username: Demouser</p>
-                                <p>Password: Demo1234!</p></h1>
+                            <h2>My Marvelous Memoir</h2>
+                            <h1>It has proven over and over again that keeping a journal/private dairy has been effective in helping with anxiety. My Marvelous Memoir is an online personal diary app that allows you to create daily posts which you can edit and delete at anytime.</h1>
                         </header>
                     </section>
                     <h1 className="dots">........................................................................................</h1>

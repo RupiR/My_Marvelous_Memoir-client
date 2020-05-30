@@ -28,7 +28,16 @@ export default class NewPostForm extends Component {
                 &nbsp;&nbsp;&nbsp;
                 <div className="form-section">
                     <label htmlFor="entrysummary" style={{ fontWeight: "bold" }}>Entry</label> &nbsp;&nbsp;&nbsp;
-                    <textarea name="entrysummary" rows="15" required></textarea>
+                    {/* <textarea name="entrysummary" rows="15" required></textarea> */}
+                    <textarea
+                        required
+                        aria-label="Type an entry.."
+                        name="text"
+                        id="text"
+                        cols="30"
+                        rows="10"
+                        placeholder="Type an entry.."
+                    ></textarea>
                 </div>
 
                 <p style={{ fontWeight: "bold" }}>Select private or public:</p>
