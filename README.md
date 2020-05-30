@@ -16,12 +16,12 @@ For testing purposes, I recommend you test our web app with the following login 
 ## Screenshots
 
 <p align="center">
-  <img width="223" height="395.5" src="/screenshots/landingpage.png">
-  <img width="223" height="395.5" src="/screenshots/registerpage.png">
+  <img width="223" height="395.5" src="assets/landingpage.png">
+  <img width="223" height="395.5" src="assets/registerpage.png">
   <img width="223" height="395.5" src="assets/loginpage.png">
-  <img width="223" height="395.5" src="screenshots/userpage.png">
-  <img width="223" height="395.5" src="screenshots/addnewentrypage.png">
-  <img width="223" height="395.5" src="screenshots/publicpostpage.png">
+  <img width="223" height="395.5" src="assets/userpage.png">
+  <img width="223" height="395.5" src="assets/addnewentrypage.png">
+  <img width="223" height="395.5" src="assets/publicpostpage.png">
 </p>
 
 ## API Documentation
