@@ -15,31 +15,14 @@ For testing purposes, I recommend you test our web app with the following login 
 
 ## Screenshots
 
-Landing Page:
-![Landing Page](screenshots/landingpage.PNG)
-
-Register Page:
-![Register Page](screenshots/registerpage.PNG)
-
-Login Page:
-![Login Page](screenshots/loginpage.PNG)
-
-User Page:
-![User Page](screenshots/userpage.PNG)
-
-Add New Entry Page:
-![Add New Entry Page](screenshots/addnewentrypage.PNG)
-
-Public Posts Page:
-![Public Posts Page](screenshots/publicpost.PNG)
-
-Add New Entry:
-
-![Add New Entry](screenshots/newpostscreenshot.PNG)
-
-Post Example:
-
-![Post Entries](screenshots/postscreenshot.PNG)
+<p align="center">
+  <img width="223" height="395.5" src="screenshots/landingpage.png">
+  <img width="223" height="395.5" src="screenshots/registerpage.png">
+  <img width="223" height="395.5" src="screenshots/loginpage.png">
+  <img width="223" height="395.5" src="screenshots/userpage.png">
+  <img width="223" height="395.5" src="screenshots/addnewentrypage.png">
+  <img width="223" height="395.5" src="screenshots/publicpostpage.png">
+</p>
 
 ## API Documentation
 
